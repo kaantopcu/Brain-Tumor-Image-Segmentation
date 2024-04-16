@@ -4,6 +4,8 @@ import numpy as np
 import cv2
 import matplotlib.pyplot as plt
 import nibabel as nib
+import keras
+from keras.utils import to_categorical
 
 def load_case(image_nifty_file, label_nifty_file):
     # load the image and label file, get the image content and return a numpy array for each
